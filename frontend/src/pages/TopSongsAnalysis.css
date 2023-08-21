@@ -1,0 +1,27 @@
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #23a6d5, #23d5ab);
+    }
+    50% {
+        background: linear-gradient(60deg, #2db2e3, #2ad281);
+    }
+
+    100% {
+        background: linear-gradient(45deg, #23d5ab, #23a6d5);
+    }
+}
+
+body {
+    background: linear-gradient(to bottom, #ff9900, #ffcc00);
+    /* Additional styling for the body */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    animation: gradientAnimation 3s ease infinite;
+    background-size: 400% 400%;
+    /* Adjust other styling as needed */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
